@@ -6,7 +6,7 @@ function makeGraphs(error, apiData) {
 	
 //Start Transformations
 	var dataSet = apiData;
-	console.log(dataset);
+	console.log(dataSet);
 	var dateFormat = d3.time.format("%m/%d/%Y");
 	dataSet.forEach(function(d) {
 		d.date_posted = dateFormat.parse(d.date_posted);
